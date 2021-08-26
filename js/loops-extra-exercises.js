@@ -12,7 +12,13 @@
  * Notes
  * Expect any positive number between 1 and 1000.
  */
-
+const addUp = num => {
+    let sum = 0;
+    for (let i = 1; i <= num; i++) {
+        sum += i;
+    }
+    return sum;
+}
 
 /**
  * TODO:
@@ -27,7 +33,15 @@
  * Notes
  * Your output must be case-sensitive (see second example).
  */
-
+const charCount = (str1, str2) => {
+    let count = 0;
+    for (let i = 0; i < str2.length; i++) {
+       if (str1 === str2[i]) {
+        count += 1;
+        }
+    }
+    return count;
+}
 
 /**
  * TODO:
@@ -44,8 +58,30 @@
  * Input will be single words.
  * Characters in words will be upper or lower case.
  * "y" is not considered a vowel.
- * Input always contains a vowel.
+ * Input always contains a vowel.s
  */
+const firstVowel = string => {
+
+
+    // for (let i = 0; i < string.length; i++) {
+    //         if (string[i] === "a" || string[i] === "e" || string[i] === "i" ||
+    //             string[i] === "o" || string[i] === "u" || string[i] === "A" ||
+    //             string[i] === "E" || string[i] === "I" ||
+    //             string[i] === "O" || string[i] === "U") {
+    //             return string.indexOf(string[i]);
+    //             break;
+    //         }
+    //
+    // }
+
+    const vowels = ["a", "e", "i", "o", "u"];
+    for (let i = 0; i < string.length; i++) {
+        if (vowels.includes(string[i].toLowerCase())) {
+            return i;;
+        }
+    }
+
+}
 
 
 /**
@@ -65,7 +101,9 @@
  * Notes
  * For an added challenge, try to solve this without using strings.
  */
+const count = number => {
 
+}
 
 /**
  * TODO:
